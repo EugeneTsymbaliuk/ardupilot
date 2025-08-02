@@ -727,7 +727,7 @@ bool AP_Arming_Copter::arm(const AP_Arming::Method method, const bool do_arming_
         LOGGER_WRITE_EVENT(LogEvent::EKF_ALT_RESET);
 
         // we have reset height, so arming height is zero
-        copter.arming_altitude_m = 0;
+        //copter.arming_altitude_m = 0;
     } else if (!ahrs.home_is_locked()) {
         // Reset home position if it has already been set before (but not locked)
         if (!copter.set_home_to_current_location(false)) {
